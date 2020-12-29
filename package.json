@@ -14,6 +14,7 @@
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.21.1",
     "core-js": "^3.6.5",
+    "file-saver": "^2.0.5",
     "ics": "^2.26.2",
     "lodash": "^4.17.20",
     "pdfjs-dist": "^2.5.207",

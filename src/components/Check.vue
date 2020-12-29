@@ -36,10 +36,11 @@
 const ics = require('ics')
 import { mapActions, mapGetters } from 'vuex'
 import _ from 'lodash'
+import { saveAs } from 'file-saver'
 export default {
 	data() {
 		return {
-			shiftTable: []
+			shiftTable: [],
 		}
 	},
 	computed: {
@@ -92,8 +93,10 @@ export default {
             if (error) {
                 console.log(error)
                 return
-            }
-            this.downloadBlob(new Blob([value]),"icalfile.ics")
+			}
+			
+			saveAs(new Blob([value]),"icalfile.ics")
+            //this.downloadBlob(new Blob([value]),"icalfile.ics")
             //console.log(value)
         },
 	},
@@ -110,6 +113,8 @@ export default {
 					"Kommentar":element.comment
 				})
 			})
+
+			//this.generateIcs()
 		}
 	}
 }
