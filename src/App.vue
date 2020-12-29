@@ -2,7 +2,7 @@
   <div id="app">
     <b-navbar type="dark" variant="dark">
       <b-navbar-brand>
-        AD-Cal: Soll-Einsatzplan Converter
+        AD-CalConvert: Soll-Einsatzplan Converter
       </b-navbar-brand>
     </b-navbar>
     <router-view/>
